@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+.container {
+  max-width: 390px;
+  height: 100vh;
+  background: var(--gradient-color);
+  margin: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.c-size {
+  width: 390px;
+  height: 200px;
+  background: var(--black-color);
+  overflow: hidden;
+  border-radius: 15px;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.mob__screen {
+  padding: 40px 14px;
+
+  .header h1 {
+    font-family: var(--header-font);
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    text-shadow: var(--text-shadow);
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  .curousel {
+    margin-top: 4rem;
+    display: flex;
+    width: 1048px;
+    gap: 15px;
 
-.App-link {
-  color: #61dafb;
-}
+    &__one {
+      display: flex;
+      align-items: center;
+      gap: 20px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+      .prof-img {
+        width: 159px;
+        height: 200px;
+
+        & img {
+          width: 100%;
+          height: 200px;
+        }
+      }
+
+      .prof-bio {
+        max-width: 118px;
+
+        h1 {
+          font-size: 27px;
+          letter-spacing: -0.41px;
+          margin-bottom: 9px;
+        }
+
+        span {
+          color: var(--primary-color-light);
+          font-size: 18px;
+          letter-spacing: -0.41px;
+        }
+      }
+    }
+
+    &__two {
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      .work-bio {
+        width: 160px;
+        padding-left: 35px;
+
+        h1 {
+          font-size: 27px;
+          margin-bottom: 9px;
+        }
+
+        span {
+          font-size: 18px;
+          color: var(--primary-color-light);
+        }
+      }
+
+      .work-img {
+        position: absolute;
+        left: 170px;
+        top: -21px;
+
+        width: 248px;
+        height: 248px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        & img {
+          width: 100%;
+        }
+      }
+    }
+
+    &__three {
+      position: relative;
+
+      .bg-img {
+        img {
+          width: 100%;
+          height: auto;
+          filter: blur(2.5px);
+        }
+
+        span {
+          position: absolute;
+          width: 268px;
+          left: 37px;
+          top: 61px;
+          text-align: center;
+          font-style: italic;
+          font-size: 18px;
+        }
+      }
+    }
   }
 }
