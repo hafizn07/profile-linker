@@ -1,8 +1,6 @@
 .container {
-  max-width: 430px;
+  max-width: 100%;
   height: 100vh;
-  background: var(--gradient-color);
-  margin: auto;
 }
 
 .c-size {
@@ -19,7 +17,10 @@
 }
 
 .mob__screen {
-  padding: 40px 14px;
+  width: 400px;
+  margin: auto;
+  background: var(--gradient-color);
+  padding: 35px 14px 0 14px;
   height: 100vh;
   overflow: hidden;
 
@@ -32,7 +33,7 @@
   }
 
   .curousel {
-    margin: 3.5rem auto 0 auto;
+    margin: 3rem auto 0 auto;
     width: 340px;
     height: 200px;
     gap: 15px;
@@ -129,12 +130,10 @@
   }
 
   .profile-links {
-    width: 365px;
     height: 312px;
     margin: 46px auto 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 6px;
 
@@ -143,7 +142,7 @@
     }
 
     .link-tab {
-      width: 179px;
+      max-width: 179px;
       height: 100px;
       background-color: var(--primary-color);
       border-radius: 10px;
@@ -165,6 +164,16 @@
       &:hover {
         background-color: var(--primary-color-light);
       }
+    }
+  }
+
+  .footer {
+    padding: 4rem 0 0;
+
+    h4 {
+      text-align: center;
+      font-weight: 200;
+      color: rgba(255, 255, 255, 0.497);
     }
   }
 }
