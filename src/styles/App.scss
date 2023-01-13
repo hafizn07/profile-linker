@@ -1,21 +1,27 @@
 .container {
-  max-width: 390px;
+  max-width: 430px;
   height: 100vh;
   background: var(--gradient-color);
   margin: auto;
 }
 
 .c-size {
-  width: 390px;
+  width: 340px;
   height: 200px;
   background: var(--black-color);
   overflow: hidden;
   border-radius: 15px;
-  
+
+}
+
+.swiper {
+  width: 100%;
 }
 
 .mob__screen {
   padding: 40px 14px;
+  height: 100vh;
+  overflow: hidden;
 
   .header h1 {
     font-family: var(--header-font);
@@ -26,9 +32,9 @@
   }
 
   .curousel {
-    margin-top: 4rem;
-    display: flex;
-    width: 1048px;
+    margin: 3.5rem auto 0 auto;
+    width: 340px;
+    height: 200px;
     gap: 15px;
 
     &__one {
@@ -118,6 +124,46 @@
           font-style: italic;
           font-size: 18px;
         }
+      }
+    }
+  }
+
+  .profile-links {
+    width: 365px;
+    height: 312px;
+    margin: 46px auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 6px;
+
+    a {
+      color: var(--white-color);
+    }
+
+    .link-tab {
+      width: 179px;
+      height: 100px;
+      background-color: var(--primary-color);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 15px;
+      cursor: pointer;
+
+      span {
+        color: var(--white-color);
+      }
+
+      h5 {
+        font-weight: 400;
+        font-size: 16px;
+      }
+
+      &:hover {
+        background-color: var(--primary-color-light);
       }
     }
   }

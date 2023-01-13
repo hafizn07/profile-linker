@@ -5,8 +5,8 @@
 :root {
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --primary-color: #01877b;
-  --primary-color-light: rgba(255, 255, 255, 0.631);
+  --primary-color: #333333;
+  --primary-color-light: #282A3A;
   --gradient-color: linear-gradient(180deg, #2c3034, #191e22);
   --black-color: #000000;
   --white-color: #ffffff;
@@ -36,7 +36,6 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--white-color);
-  
 }
 
 ul {
