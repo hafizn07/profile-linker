@@ -10,8 +10,8 @@ const ShareBtn = () => {
 
     const [copy, setCopy] = useState(false)
 
-    const shareUrl = "https://www.hafizmp.com";
-    const title = 'Hafiz';
+    const shareUrl = "https://connecthafiz.netlify.app/";
+    const title = 'Hafiz - Frontend Developer';
 
     const [buttonPopup, setButtonPopup] = useState(false)
     return (
