@@ -1,12 +1,11 @@
 import './styles/App.scss';
 import { images } from "./constants"
+import ShareBtn from "./components/ShareBtn"
 
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-cards";
-
 // import required modules
 import { Autoplay, EffectCards } from "swiper";
 
@@ -72,6 +71,8 @@ function App() {
             </Swiper>
           </div>
 
+          <ShareBtn />
+
           <div className="profile-links">
             <a href='https://www.hafizmp.com/' target="_blank" rel="noreferrer" className="link-tab">
               <span><BsGlobe2 size={38} /></span>
@@ -100,7 +101,7 @@ function App() {
           </div>
 
           <div className="footer">
-            <h4>&#169; haizmp.com | 2023</h4>
+            <h4>&#169; 2023 | hafizmp.com</h4>
           </div>
 
         </div>

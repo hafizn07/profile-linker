@@ -6,6 +6,7 @@
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --primary-color: #333333;
+  --secondary-color: #01877B;
   --primary-color-light: #282A3A;
   --gradient-color: linear-gradient(180deg, #2c3034, #191e22);
   --black-color: #000000;

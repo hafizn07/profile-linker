@@ -20,8 +20,8 @@
   width: 400px;
   margin: auto;
   background: var(--gradient-color);
-  padding: 35px 14px 0 14px;
-  height: 100vh;
+  padding: 35px 14px;
+  height: auto;
   overflow: hidden;
 
   .header h1 {
@@ -129,9 +129,109 @@
     }
   }
 
+  .sharebtn {
+    background-color: var(--secondary-color);
+    font-weight: 600;
+    width: max-content;
+    padding: 8px 25px;
+    border-radius: 20px;
+    margin: 28px auto;
+    display: flex;
+    gap: 2px;
+    align-items: center;
+  }
+
+  .popup {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &__inner {
+      position: relative;
+      padding: 32px;
+      width: 100%;
+      max-width: 360px;
+
+      backdrop-filter: blur(6px) saturate(100%);
+      -webkit-backdrop-filter: blur(6px) saturate(100%);
+      background-color: rgba(17, 25, 40, 0.75);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.125);
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+    }
+
+    .social-share {
+      width: 260px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 12px;
+    }
+
+    .input_group {
+      margin-top: 1.5rem;
+      width: 80%;
+      height: 42px;
+      border-radius: 10px;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 8px 0 8px;
+
+      i {
+        display: flex;
+        font-size: 25px;
+        color: rgb(157, 165, 178);
+      }
+
+      input {
+        width: 65%;
+        height: 40px;
+        border: 1px solid white;
+        outline: none;
+        color: rgb(157, 165, 178);
+        font-size: 15px;
+      }
+
+      button {
+        width: 60px;
+        height: 33px;
+        border-radius: 6px;
+        color: white;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+
+      .copy {
+        background-color: rgb(77, 144, 253);
+      }
+
+      .copied {
+        background-color: rgb(39, 196, 82);
+      }
+    }
+  }
+
+
   .profile-links {
     height: 312px;
-    margin: 46px auto 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -151,6 +251,7 @@
       gap: 10px;
       padding: 15px;
       cursor: pointer;
+      transition: ease-in 0.2s;
 
       span {
         color: var(--white-color);
@@ -163,6 +264,7 @@
 
       &:hover {
         background-color: var(--primary-color-light);
+        transform: scale(1.02)
       }
     }
   }
