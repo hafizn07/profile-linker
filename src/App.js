@@ -51,7 +51,7 @@ function App() {
               <SwiperSlide>
                 <div className="curousel__two c-size">
                   <div className="work-bio">
-                    <h1>Currently I'm in</h1>
+                    <h1>I'm <br /> based in</h1>
                     <span>Dubai, United Arab Emirates</span>
                   </div>
                   <div className="work-img">
